@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
   workflow_dispatch:     # Manual trigger option
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
       - name: Update README with live stats
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: ukengineerx
+          GITHUB_USERNAME: ujjwal
         run: node .github/scripts/update-stats.js
       
       - name: Commit and push changes
