@@ -86,4 +86,4 @@ Agent-optimized Google Workspace CLI integration for design & research teams.
 
 ---
 
-Last updated: August 27, 2026 at 05:56 UTC
+Last updated: August 28, 2026 at 08:08 UTC
